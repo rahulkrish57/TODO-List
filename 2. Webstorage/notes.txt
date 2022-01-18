@@ -1,0 +1,22 @@
+Web Storage
+
+1. Session Storage
+    1. Browser Storage
+    2. 5MB max size
+    3. window closed => data delets
+    4. Temporary data
+2. Local Storage
+    1. Browser Storage
+    2. 10 MB max size
+    3. window closed => data wont deletd
+    4. data persists unless manually cleared
+3. Cookies
+    1. Browser
+    2. 4KB Storage
+    3. window closed => data wont deletd
+    4. sends with request -> server
+
+    Advantages of Cookies
+        1. Tracking User
+        2. session management
+    

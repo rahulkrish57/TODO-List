@@ -1,0 +1,5 @@
+1. Fetch User value
+2. creating new element with user value
+3. displaying it to user
+4. adding styles
+5. event listeners to new element
