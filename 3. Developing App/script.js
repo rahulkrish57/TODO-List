@@ -5,7 +5,7 @@ let taskContainer = document.getElementById("taskContainer");
 const taskArray = [];
 
 
-
+// setting local storage
 function setTasks() {
     localStorage.setItem("tasks", JSON.stringify(taskArray));
 }
@@ -19,7 +19,7 @@ function createTasks(userInput) {
     newElem.setAttribute("class", "task");
     taskContainer.append(newElem);
 }
-
+// getting key and value from local storage
 function getTasks() {
     let tasks = localStorage.getItem("tasks");
     if(!tasks) { return; }
@@ -36,10 +36,10 @@ function addFunc() {
     if (length === 0) return;
 
     taskArray.push(userInput);
-    setTasks();
-    createTasks(userInput); 
+    setTasks(); // calling set func
+    createTasks(userInput);  // calling create task func
 }
-getTasks();
+getTasks(); // calling get func
 
 function handleTaskClick() {
      // toggle
